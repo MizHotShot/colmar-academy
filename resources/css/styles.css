@@ -1,3 +1,91 @@
 * {
     font-family: 'Lato', sans-serif;
+    text-align: left;
+    color: rgb(80, 80, 80);
+    background-color: bisque;
+}
+
+body {
+    margin: 0;
+}
+
+/* Font sizes */
+h1 {
+    font-size: 3.8em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight:800;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight:800;
+}
+
+/* Header */
+header {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 4em;
+    padding: 1em 1.5em;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+header img {
+    height: 5em;
+    width: auto;
+}
+
+.header-left {
+    display: inline-flex;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.academy {
+    color: gray;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+li {
+    font-size: 1.7em;
+    font-weight: 600;
+    margin: 0 0.5em 0;
+}
+
+/*Banner section*/
+.banner {
+    background-color: gray;
+    display: flex;
+    align-content: center;
+}
+
+.banner img {
+    width: 60%;
+    height: auto;
+    margin: 2em 1.5em;
+}
+
+.banner .info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 2em;
+    background-color: transparent;
 }
