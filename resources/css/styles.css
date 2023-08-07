@@ -1,8 +1,9 @@
 * {
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     text-align: left;
     color: rgb(80, 80, 80);
-    background-color: bisque;
+    text-decoration: none;
 }
 
 body {
@@ -11,34 +12,34 @@ body {
 
 /* Font sizes */
 h1 {
-    font-size: 3.8em;
+    font-size: 3.8rem;
     font-weight: 900;
 }
 
 h2 {
-    font-size: 2em;
-    font-weight:800;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1.6em;
-    font-weight:800;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 
 /* Header */
 header {
-    display: inline-flex;
+    display: flex;
     position: relative;
     width: 100%;
-    height: 4em;
-    padding: 1em 1.5em;
+    height: 4rem;
+    padding: 1rem 1.5rem;
     flex-wrap: wrap;
     align-content: center;
+    overflow: hidden;
 }
 
 header img {
-    height: 5em;
-    width: auto;
+    height: 4rem;
 }
 
 .header-left {
@@ -64,14 +65,14 @@ ul {
 
 
 li {
-    font-size: 1.7em;
+    font-size: 1.7rem;
     font-weight: 600;
-    margin: 0 0.5em 0;
+    margin: 0 0.5rem 0;
 }
 
 /*Banner section*/
 .banner {
-    background-color: gray;
+    background-color: rgb(200, 200, 200);
     display: flex;
     align-content: center;
 }
@@ -79,13 +80,32 @@ li {
 .banner img {
     width: 60%;
     height: auto;
-    margin: 2em 1.5em;
+    margin: 2rem 1.5rem;
 }
 
 .banner .info {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin-left: 2em;
-    background-color: transparent;
+    margin-left: 2rem;
+    justify-content: center;
+    max-width: 500px;
+    background-color: rgb(200, 200, 200);
+}
+
+button {
+    width:100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:white;
+    background-color: rgb(80, 80, 80);
+    border: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+/* Thesis section*/
+
+video {
+    width: 60%;
 }
