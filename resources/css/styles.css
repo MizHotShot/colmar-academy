@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 
-/* Currently working for desktop >1700px */
+/* Currently working for desktop >~1650px */
 
 body {
     margin: 0;
@@ -26,6 +26,11 @@ h2 {
 h3 {
     font-size: 1.8rem;
     font-weight: 800;
+}
+
+h6 {
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 p {
@@ -121,7 +126,8 @@ button {
 
 .information-left {
     width: 60%;
-    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    border: 1px solid rgb(200, 200, 200);
 }
 
 .info-img {
@@ -137,22 +143,31 @@ button {
     align-content: center;
 }
 
+.information-left p {
+    margin-left: 0;
+}
+
 .info {
     display: grid;
     width: 40%;
-    margin: 1rem 0 2rem;
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 #container {
     display: flex;
+    /* for mobile flex-wrap: wrap;*/
     width: 100%;
     align-content: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid rgb(200, 200, 200);
 }
 
 .container-image {
     width: 35%;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 1rem;
 }
 
 #container img {
