@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-/* Font sizes */
+/* Font styles */
 h1 {
     font-size: 3.8rem;
     font-weight: 900;
@@ -48,6 +48,7 @@ header {
     flex-wrap: wrap;
     align-content: center;
     overflow: hidden;
+    background-color: white;
 }
 
 header img {
@@ -122,6 +123,7 @@ button {
 .information {
     display: flex;
     align-content: center;
+    background-color: rgb(240, 240, 240);
 }
 
 .information-left {
@@ -138,7 +140,7 @@ button {
 
 .subtext {
     display: flex;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem 2rem 1.5rem;
     flex-wrap: wrap;
     align-content: center;
 }
@@ -150,6 +152,7 @@ button {
 .info {
     display: grid;
     width: 40%;
+    padding-bottom: 2rem;
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 
@@ -185,7 +188,50 @@ button {
 .subtext a {
     color: rgb(0, 153, 255);
 }
+
+.subtext h1 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Courses section*/
+.courses {
+    display: flex;
+    padding: 2rem 4.5rem;
+    background-color: rgb(200, 200, 200);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.courses h1 {
+    margin: 0 auto 2rem;
+}
+
+.course-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#card {
+    display:block;
+    background-color: white;
+    width: min-content;
+    margin: 1rem;
+}
+
+#card img {
+    object-fit: cover;
+}
+
+#card .subtext {
+    display: block;
+    margin: 1rem 1rem 1.5rem;
+    padding: 0;
+}
+
 /* Thesis section*/
+
 
 video {
     width: 60%;
