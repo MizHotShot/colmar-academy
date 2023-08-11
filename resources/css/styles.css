@@ -7,8 +7,6 @@
     text-decoration: none;
 }
 
-/* Currently working for desktop >~1650px */
-
 body {
     margin: 0;
 }
@@ -311,6 +309,11 @@ footer h6 {
     * {
         font-size: 12px;
     }
+
+    /* Subtext wasn't wrapping properly*/ 
+    .subtext {
+        padding-right: 6rem;
+    }
 }
 
 /* For Screen < Mobile*/
@@ -333,6 +336,11 @@ footer h6 {
     * {
         font-size: 0.75rem;
     }
+
+    body {
+        min-width: 400px;
+    }
+
     /* Header */
     .header-left, .header-right  {
         display: none;
