@@ -155,7 +155,6 @@ button {
 #container {
     display: flex;
     width: 100%;
-    height: fit-content;
     padding: 1rem;
     margin-bottom: 0.2rem;
     border: 1px solid rgb(200, 200, 200);
@@ -163,7 +162,6 @@ button {
 
 .container-image {
     width: 35%;
-    height: fit-content;
 }
 
 #container img {
@@ -178,9 +176,9 @@ button {
 
 .subtext {
     display: flex;
-    padding: 0 1.5rem 0 1.5rem;
     flex-wrap: wrap;
-    align-content: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .subtext h3, p {
@@ -308,11 +306,6 @@ footer h6 {
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
     * {
         font-size: 12px;
-    }
-
-    /* Subtext wasn't wrapping properly*/ 
-    .subtext {
-        padding-right: 6rem;
     }
 }
 
