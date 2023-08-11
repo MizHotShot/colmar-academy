@@ -82,28 +82,34 @@ li {
     margin: 0 0.5rem 0;
 }
 
-/*Banner section*/
-.banner {
-    background-color: rgb(200, 200, 200);
-    display: flex;
-    align-content: center;
-}
-
-.banner-image {
+/* Left and Right styles */
+#left {
     width: 60%;
     padding: 2rem 1.5rem;
 }
 
-.banner img {
+#left img {
     width: 100%;
     object-fit: cover;
 }
 
-.banner .info {
+#right {
     display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-bottom: 2rem;
+}
+
+/*Banner section*/
+.banner {
+    background-color: rgb(200, 200, 200);
+    display: flex;
+}
+
+.banner #right {
     flex-wrap: wrap;
     align-content: center;
-    margin-left: 2rem;
+    padding-left: 2rem;
     justify-content: center;
     max-width: 500px;
     background-color: rgb(200, 200, 200);
@@ -124,27 +130,15 @@ button {
 /* Information section */
 .information {
     display: flex;
-    align-content: center;
     background-color: rgb(240, 240, 240);
 }
 
-.information-left {
-    width: 60%;
-    padding-right: 1.5rem;
+.information #left {
     border: 1px solid rgb(200, 200, 200);
 }
 
-.info-img {
-    width: 100%;
-    height: auto;
-    padding: 2rem 1.5rem;
-}
-
-.subtext {
-    display: flex;
-    padding: 0 1.5rem 2rem 1.5rem;
-    flex-wrap: wrap;
-    align-content: center;
+.information .subtext {
+    padding-left: 0;
 }
 
 .information-left p {
@@ -152,25 +146,18 @@ button {
 }
 
 .orientation {
-    padding: 2rem 1rem 1rem !important;
+    padding-top: 2rem !important;
 }
 
 /* Info, container, subtext*/
 .info {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    padding-bottom: 2rem;
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 #container {
     display: flex;
-    /* for mobile flex-wrap: wrap;*/
     width: 100%;
     height: fit-content;
-    align-content: center;
-    justify-content: space-between;
     padding: 1rem;
     margin-bottom: 0.2rem;
     border: 1px solid rgb(200, 200, 200);
@@ -189,7 +176,13 @@ button {
 
 #container .subtext {
     width: 65%;
-    padding-bottom: 0;
+}
+
+.subtext {
+    display: flex;
+    padding: 0 1.5rem 0 1.5rem;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .subtext h3, p {
@@ -260,18 +253,15 @@ button {
     margin: 2rem auto 2rem;
 }
 
-.thesis-left {
-    width: 60%;
-    padding: 0 1.5rem 2rem;
+.thesis .subtext {
+    padding-left: 0;
 }
-
 video {
     width:100%;
     margin-bottom: 1.5rem;
 }
 
 .thesis #container {
-    height:fit-content;
     border: none;
 }
 
@@ -280,7 +270,7 @@ video {
 }
 
 .fisma {
-    padding-top:0 !important;
+    padding-top: 2rem !important;
 }
 
 /* Footer */
@@ -323,26 +313,82 @@ footer h6 {
     }
 }
 
-/* For Header < Mobile*/
+/* For Screen < Mobile*/
 @media screen and (min-width: 480px) {
     .mobile {
+        display: none;
+    }
+
+    .mobile-image {
         display: none;
     }
 }
 
 /* For Mobile */
 @media screen and (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+    /* Header */
     .header-left, .header-right  {
         display: none;
     }
     
     header {
-        display: inline-flex;
-        justify-content: center;
+        padding: 1rem;
+        font-size: 16px !important;
     }
 
-    .header-mobile img {
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+
+    .mobile img {
+        height: 100%;
         margin: auto 1rem;
+    }
+
+    /* Banner section mobile*/
+    .banner {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    /* Left and Right mobile */
+    #left {
+        width: 100%;
+        padding: 0;
+    }
+
+    #right {
+        width: 100%;
+        padding: 1rem !important;
+    }
+
+    /* Information section mobile*/
+    .information #left {
+        display: none;
+    }
+
+    /* Containers mobile*/ 
+    #container {
+        flex-direction: column;
+        align-content: center;
+        border:none;
+    }
+
+    .container-image {
+        width: 100%;
+    }
+
+    .container-image img {
+        object-fit: none;
+    }
+
+    .orientation {
+        padding-top: 1rem !important;
     }
 }
     
